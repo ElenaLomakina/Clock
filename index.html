@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <link href="https://fonts.googleapis.com/css?family=Aldrich|Electrolize" rel="stylesheet">
+    <link href="http://allfont.ru/allfont.css?fonts=digital-7" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="dist/clock.css">
+
+
+
+</head>
+<body>
+
+<div id="clock1">
+    <ul id="current-task"></ul>
+    <div class="time"></div>
+    <div id="events-list">
+        <button id="add-task">Add Event / Task</button>
+        <form  id="new-task" class="hidden">
+            <div>
+                <label for="start">from</label>
+                <input type="time" name="start" id="start">
+                <label for="end">to</label>
+                <input type="time" name="end" id="end">
+            </div>
+            <input type="text" name="title" placeholder="enter event or task">
+            <input type="submit" name="add"  value="Add">
+        </form>
+        <ul id="tasks"></ul>
+    </div>
+</div>
+
+<script type="text/javascript" src="./dist/bundle.js"></script>
+</body>
+</html>
