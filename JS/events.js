@@ -32,13 +32,6 @@ function validateForm(e) {
         from = myForm.elements.start.value,
         to = myForm.elements.end.value,
         title = myForm.elements.title.value;
-    console.log("from= " + from);
-    console.log("to= " + to);
-    console.log("from>=to? " + from>=to);
-    console.log("from.length= " + from.length);
-    console.log("to.length= " + to.length);
-    console.log("title.length= " + title.length);
-    console.log("from.length=0 ? " + from.length===0);
     if (from >= to) {
         isValid = false;
         alert("Field 'to' must be bigger then field 'from'");
